@@ -1,0 +1,214 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*******************  #home *****************************************************/
+#homepageImage {
+    position: relative;
+}
+
+#gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 20%, black);
+}
+
+#homepageImage img {
+    width: 100%;
+}
+
+#homepageImage h2 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Audiowide;
+    color: white;
+    z-index: 1;
+    font-style: italic;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: rgb(21, 21, 30);
+    z-index: 3;
+    height: 12%;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+nav img {
+    width: 10%;
+    display: block;
+    margin: auto;
+}
+
+nav.changeColor {
+    background-color: rgb(40, 50, 70);
+    color: #dcdcdc;
+}
+
+/*******************  #introduction ********************************************/
+
+#introduction {
+    background: linear-gradient(to bottom, black, rgb(21, 21, 30));
+    padding-top: 10%;
+}
+
+#intro {
+    color: white;
+}
+
+#intro h1,
+#intro p {
+    opacity: 0;
+    transform: translateY(40px);
+
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+#intro p.showIntroPara {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#intro h1.showIntroHeading {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.introductionHeading {
+    font-family: Audiowide;
+    font-size: 200%;
+    text-align: center;
+}
+
+.description {
+    width: 70%;
+    margin: auto;
+    font-size: 130%;
+    line-height: 200%;
+    font-family: "Exo 2";
+}
+
+#f1Weekend {
+    color: white;
+    padding-top: 10%;
+}
+
+#f1Weekend h1,
+#f1Weekend p {
+    opacity: 0;
+    transform: translateY(40px);
+
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#f1Weekend h1.showf1WeekendHeading,
+#f1Weekend p.showf1WeekendPara {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.championships {
+    color: white;
+    padding-top: 10%;
+}
+
+.championships img {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.championshipPara {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.5s ease, transform 1s ease;
+}
+
+.championshipPara.showChampionshipPara {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*******************  #mainContent ********************************************/
+#mainContent {
+    background-color: rgb(21, 21, 30);
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    font-family: Audiowide;
+    color: white;
+
+    text-align: center;
+}
+
+#mainContentLinksOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
+    row-gap: 150%;
+    justify-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#mainContent a {
+    display: flex;
+    width: 110%;
+    height: 250%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+
+    text-decoration: none;
+    font-size: 150%;
+    color: #dcdcdc;
+    background-color: rgb(40, 50, 70);
+
+    transition: color 0.5s ease, background-color 0.5s ease, transform 0.5s ease;
+}
+
+#mainContent a:hover {
+    color: rgb(225, 6, 0);
+    background-color: black;
+    transform: scale(0.95);
+}
+
+#fill {
+    padding: 3%;
+    background-color: rgb(71, 70, 76);
+    text-align: center;
+}
+
+#fill a {
+    display: inline-block;
+    color: black;
+    font-family: Audiowide;
+    font-size: 170%;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 1rem;
+
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+#fill a:hover {
+    background-color: black;
+    color: rgb(225, 6, 0);
+    transform: scale(0.95);
+}

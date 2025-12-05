@@ -1,0 +1,43 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkgrey;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    margin-top: 5%;
+}
+
+fieldset {
+    margin: auto;
+}
+
+input {
+    margin-left: 20%;
+    align-items: center;
+    border-radius: 0.3rem;
+    border: none;
+    height: 1.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+button {
+    width: 12rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+fieldset {
+    border: black solid 3px;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirelli Tyres</title>
+    <link rel="stylesheet" href="CSS/Tires.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="showTitle()">
+    <header>
+        <nav>
+            <img src="Pictures/Pirelli_logo.png" alt="">
+        </nav>
+
+        <div id="homepage">
+            <img src="Pictures/Tires_homepage.webp" alt="">
+            <div id="gradient"></div>
+            <h1 id="homeTitle">FORMULA 1 <br>&nbsp;&nbsp;<i>AND PIRELLI</i></h1>
+        </div>
+    </header>
+
+    <section>
+        <h1 id="sectionTitle">A partnership that continues innovating until 2027</h1>
+
+        <div id="imageGallery">
+            <div id="imageGalleryList">
+                <button id="firstButton" onclick="changePhotoGallery(0)">
+                    <img src="Pictures/imageGallery_1.webp" alt="">
+                </button>
+
+                <button onclick="changePhotoGallery(1)">
+                    <img src="Pictures/imageGallery_2.webp" alt="">
+                </button>
+
+                <button onclick="changePhotoGallery(2)">
+                    <img src="Pictures/imageGallery_3.webp" alt="">
+                </button>
+
+                <button onclick="changePhotoGallery(3)">
+                    <img src="Pictures/imageGallery_4.webp" alt="">
+                </button>
+            </div>
+
+            <div id="imageGalleryContainer">
+                <img src="Pictures/imageGallery_1.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="tyres">
+
+        <div id="slickTyres">
+            <div id="slickTyreButtons">
+                <button onclick="changeTyre(0)">Red</button>
+                <button onclick="changeTyre(1)">Yellow</button>
+                <button onclick="changeTyre(2)">White</button>
+            </div>
+
+            <h1 class="smooth_heading"><i>SLICK TYRES</i></h1>
+            <img src="Pictures/tyreRed.webp" alt="">
+            <div id="tyreDescription">
+                <h2>Red</h2>
+                <p>
+                    The red tyre signifies the soft compound, designed for maximum grip and performance over shorter
+                    stints. It offers top lap times but wears out quickly, ideal for qualifying and short races.
+                    Typically <strong>C5</strong> compounds has red sidewalls, but also <strong>C3</strong>,
+                    <strong>C4</strong>, and <strong>C6</strong> can be used.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="compounds">
+        <h1 id="sectionTitle">Formula 1 tyre compounds</h1>
+        <div id="cardContainer">
+            <div class="compoundCard">
+                <h1><strong>C1</strong></h1>
+                <h3>The Ultimate Hard Compound</h3>
+                <p>
+                    The hardest compound will be nominated for the circuits that take the most energy out of the tyres.
+                    It's designed to provide maximum resistance to heat and extreme forces, being capable of running
+                    very long stints.
+                </p>
+            </div>
+
+            <div class="compoundCard">
+                <h1><strong>C2</strong></h1>
+                <h3>Engineered for Extreme Durability</h3>
+                <p>
+                    The second-hardest compound remains very suited to the faster, hotter and more abrasive circuits.
+                    These compounds are sometimes nominated for new circuits.
+                </p>
+            </div>
+
+            <div class="compoundCard">
+                <h1><strong>C3</strong></h1>
+                <h3>A Versatile Compound</h3>
+                <p>
+                    This compound is extremely versatile and can be used as either the hardest, the middle or the
+                    softest of any three-compound selection. With an excellent balance between performance and
+                    durability, this is well-suited to a wide range of conditions.
+                </p>
+            </div>
+
+            <div class="compoundCard">
+                <h1><strong>C4</strong></h1>
+                <h3>Swift Heating, Superior Heating</h3>
+                <p>
+                    This compound is designated to work well on low-severity circuits, where quite a quick warm up is
+                    required in order to reach peak performance as soon as possible. This tyre is used extensively
+                    throughout the season.
+                </p>
+            </div>
+
+            <div class="compoundCard">
+                <h1><strong>C5</strong></h1>
+                <h3>Maximum Softness for Peak Speed</h3>
+                <p>
+                    These are designed for the slowest circuits with low wear and degradation where maximum mechanical
+                    grip is required from the rubber. These are normally seen where the asphalt is exceptionally smooth.
+                </p>
+            </div>
+
+            <div class="compoundCard">
+                <h1><strong>C6</strong></h1>
+                <h3>The Queen of Street Circuits</h3>
+                <p>
+                    It's the new compound for 2025 and the softest in the Pirelli range. Its use will be limited to city
+                    circuits, where its high degradation will lead teams to make more pit stops than in the past, making
+                    races more unpredictable.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="wet_tyres">
+        <h1><i>WET TYRES</i></h1>
+        <div class="wet_tyre_card">
+            <div>
+                <h2>Green</h2>
+                <h4>Intermediate</h4>
+                <p>
+                    The intermediates are the most versatile of the rain tyres. They can be used on a wet track with no
+                    standing water, as well as a drying surface. The compound has been designed to have a wide working
+                    range, guaranteeing a wide crossover window both with the slicks and the full wets.
+                </p>
+            </div>
+            <img src="Pictures/tyreGreen.webp" alt="Green">
+        </div>
+
+        <div class="wet_tyre_card">
+            <div>
+                <h2>Blue</h2>
+                <h4>Full Wet</h4>
+                <p>
+                    The full wet tyres are the most effective for heavy rain, capable of dispersing impressive
+                    quantities of water. But if it rains heavily, visibility rather than grip causes issues, leading to
+                    race stoppages on occasions. The profile delivers increased resistance to aquaplaning, which gives
+                    the tyre more grip in heavy rain.
+                </p>
+            </div>
+            <img src="Pictures/tyreBlue.webp" alt="Blue">
+        </div>
+    </section>
+
+    <footer>
+        <img src="Pictures/Pirelli_logo.png" alt="">
+
+        <h2>
+            <a href="https://www.pirelli.com/global/en-ww/homepage/" target="_blank">
+                Visit Pirelli's official site
+            </a>
+        </h2>
+    </footer>
+    <script src="JavaScript/Tires.js"></script>
+</body>
+
+</html>

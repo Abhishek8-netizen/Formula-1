@@ -1,0 +1,320 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 250, 250);
+}
+
+header nav {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    z-index: 3;
+
+    transition: background-color 0.5s ease;
+}
+
+header nav.changeBgColor {
+    background-color: white;
+}
+
+header nav img {
+    width: 10%;
+    margin-left: 2rem;
+}
+
+#homepage {
+    position: relative;
+}
+
+#homepage img {
+    width: 100%;
+}
+
+#homepage #gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, transparent 20%, black),
+        linear-gradient(to bottom, transparent 20%, black);
+}
+
+#homepage h1 {
+    font-family: Audiowide;
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 2%;
+    font-size: 500%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+section {
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+
+#sectionTitle {
+    font-family: Audiowide;
+    color: rgb(222, 23, 37);
+    margin-left: 2%;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#imageGallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+#imageGalleryContainer {
+    width: 60rem;
+    padding: 0;
+}
+
+#imageGalleryContainer img {
+    width: 60rem;
+    display: block;
+    margin: auto;
+
+    transition: opacity 0.5s ease;
+}
+
+#imageGalleryList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#imageGalleryList img {
+    object-fit: cover;
+    width: 100%;
+
+    transition: opacity 0.5s ease;
+}
+
+#imageGalleryList button {
+    width: 10rem;
+    height: 5rem;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+
+#tyres {
+    padding-bottom: 10%;
+}
+
+.smooth_heading {
+    font-family: Audiowide;
+    font-size: 11rem;
+    text-align: center;
+    color: rgb(210, 210, 210);
+    opacity: 0;
+    transform: translateX(100px);
+
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.smooth_heading.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#slickTyreButtons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#slickTyreButtons.showButtons {
+    opacity: 1;
+}
+
+#slickTyreButtons button {
+    width: 20%;
+    font-family: Audiowide;
+    font-size: 1.3rem;
+    border: none;
+    background-color: transparent;
+
+}
+
+#slickTyres {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+    /*background-color: black;*/
+}
+
+#slickTyres img {
+    position: absolute;
+    width: 25%;
+    top: 35%;
+
+    left: 50%;
+    transform: translate(-50%, 150px);
+
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#slickTyres img.showTyreImage {
+    transform: translate(-50%, 0);
+}
+
+#tyreDescription {
+    position: absolute;
+    font-family: "Exo 2";
+    text-align: center;
+    width: 80%;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#tyreDescription h2 {
+    font-size: 2rem;
+    transition: opacity 0.5s ease;
+}
+
+#tyreDescription p {
+    font-size: 1.3rem;
+    transition: opacity 0.5s ease;
+}
+
+#compounds #sectionTitle {
+    font-family: Audiowide;
+    color: rgb(222, 23, 37);
+    text-align: center;
+}
+
+#cardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    justify-items: center;
+}
+
+.compoundCard {
+    background-color: black;
+    color: rgb(222, 23, 37);
+
+    font-family: "Exo 2";
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 80%;
+}
+
+.compoundCard h1 {
+    font-size: 5rem;
+}
+
+.compoundCard h3 {
+    font-size: 2rem;
+}
+
+.compoundCard p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+#wet_tyres {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+#wet_tyres h1 {
+    font-family: Audiowide;
+    font-size: 11rem;
+    text-align: center;
+    color: rgb(210, 210, 210);
+}
+
+.wet_tyre_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightgray;
+    margin: auto;
+    border-radius: 1.5rem;
+    width: 80%;
+    padding: 1.5rem;
+    gap: 5rem;
+    font-family: "Exo 2";
+    margin-top: 5rem;
+
+    opacity: 0;
+    transform: translateY(100px);
+
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.wet_tyre_card.show_wet_tyre_card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.wet_tyre_card div {
+    width: 50%;
+    padding: 0;
+}
+
+.wet_tyre_card div h2 {
+    font-size: 2rem;
+}
+
+.wet_tyre_card div h4 {
+    font-size: 1.5rem;
+}
+
+.wet_tyre_card div p {
+    font-size: 1.2rem;
+}
+
+.wet_tyre_card img {
+    width: 25%;
+}
+
+footer {
+    background-color: black;
+    gap: 35rem;
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    width: 30%;
+    margin-left: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-family: Audiowide;
+    padding: 0;
+
+    transition: color 0.5s ease;
+}
+
+footer a:hover {
+    color: red;
+}
