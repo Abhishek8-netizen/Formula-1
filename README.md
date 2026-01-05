@@ -13,6 +13,7 @@ The project is fully frontend-based.
 ---
 
 ### Homepage (index.html)
+![Homepage](Pictures/homepage.png)
 
 * Introduction to Formula 1
   
@@ -25,6 +26,7 @@ The project is fully frontend-based.
 * Smooth UI transitions
 
 ### F1 Sprint Page
+![Sprint Page](Pictures/f1SprintHomepage.png)
 
 * Explains Sprint race format
   
@@ -33,6 +35,7 @@ The project is fully frontend-based.
 * Clean minimal layout
 
 ### Tyres Page (Pirelli)
+![Tyre Page](Pictures/tiresHomepage.png)
 
 * Interactive image gallery
   
@@ -43,6 +46,7 @@ The project is fully frontend-based.
 * Compound cards (C1–C6)
 
 ### Teams Page
+![Teams Homepage](Pictures/teams.png)
 
 * Displays all current F1 teams
   
@@ -51,6 +55,7 @@ The project is fully frontend-based.
 * Gradient-based team branding
 
 ### Dynamic Team Page
+![Team](Pictures/team.png)
 
 * Loads team data using URL parameters
   
