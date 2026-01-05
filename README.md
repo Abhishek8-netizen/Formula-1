@@ -25,6 +25,8 @@ The project is fully frontend-based.
   
 * Smooth UI transitions
 
+-
+
 ### F1 Sprint Page
 ![Sprint Page](Pictures/f1SprintHomepage.png)
 
@@ -33,6 +35,9 @@ The project is fully frontend-based.
 * Dynamic theme changes while scrolling
   
 * Clean minimal layout
+
+
+-
 
 ### Tyres Page (Pirelli)
 ![Tyre Page](Pictures/tiresHomepage.png)
