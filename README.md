@@ -35,7 +35,8 @@ The project is fully frontend-based.
 * Dynamic theme changes while scrolling
   
 * Clean minimal layout
-
+  
+<br>
 
 ### Tyres Page (Pirelli)
 ![Tyre Page](Pictures/tiresHomepage.png)
@@ -48,8 +49,7 @@ The project is fully frontend-based.
   
 * Compound cards (C1–C6)
 
-
-
+<br>
 
 ### Teams Page
 ![Teams Homepage](Pictures/teams.png)
@@ -59,6 +59,8 @@ The project is fully frontend-based.
 * Clickable team cards
   
 * Gradient-based team branding
+
+<br>
 
 ### Dynamic Team Page
 ![Team](Pictures/team.png)
